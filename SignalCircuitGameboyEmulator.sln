@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalCircuitGameboyEmulator", "SignalCircuitGameboyEmulator.csproj", "{1F98E6B9-EDA7-4A6F-A51F-DAA7D16F33FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F98E6B9-EDA7-4A6F-A51F-DAA7D16F33FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F98E6B9-EDA7-4A6F-A51F-DAA7D16F33FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F98E6B9-EDA7-4A6F-A51F-DAA7D16F33FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F98E6B9-EDA7-4A6F-A51F-DAA7D16F33FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C4C4617-9751-4760-BBCB-2E5E31188E69}
+	EndGlobalSection
+EndGlobal
