@@ -1,5 +1,6 @@
 using SignalCircuitLib;
 using SignalCircuitLib.Component;
+using SignalCircuitLib.Signals;
 using System.ComponentModel;
 
 namespace SignalCircuitGameboyEmulator
@@ -11,8 +12,10 @@ namespace SignalCircuitGameboyEmulator
         public GameboyForm()
         {
             InitializeComponent();
-        }
 
+            ButtonPressed += Emulator.Instance.GameboyForm_ButtonPressed;
+
+        }
 
         #region ButtonPressEvents
         // Button Pressed Event
@@ -87,7 +90,6 @@ namespace SignalCircuitGameboyEmulator
 
         private void GameboyForm_Activated(object sender, EventArgs e)
         {
-            Logger.WriteLine("GameboyForm_Activated()", Logger.LogLevel.Information);
             debugTextViewer.Show();
             debugTextViewer.Location = new Point(this.ClientRectangle.Width+5, 0);
         }

@@ -21,7 +21,19 @@ namespace SignalCircuitGameboyEmulator
 
         private void Logger_MessageLogged(object? sender, Logger.LoggerMessageEventArgs e)
         {
-            this.textBox1.AppendText(e.Message);
+            try
+            {
+                if (textBox1.InvokeRequired)
+                {
+                    Action action = delegate { Logger_MessageLogged(sender, e); };
+                    textBox1.Invoke(action);
+                }
+                else
+                {
+                    this.textBox1.AppendText(e.Message);
+                }
+            }
+            catch { }
         }
     }
 }
